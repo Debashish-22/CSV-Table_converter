@@ -35,4 +35,4 @@
     npm start
     ```
  3. Now the Server runnning, open the link (http://localhost:8000) to acess the interface.
- 4. Check out Samples folder for CSV files of dfifferent size to test.
+ 4. Check out 'Samples' folder for CSV files of dfifferent size to test the application.

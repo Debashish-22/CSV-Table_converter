@@ -1,5 +1,5 @@
 # CSV-Table_converter
-> It's a web application where we can upload CSV files to convert it into a Table and perform various operations like Searching, sorting, also we can display any column as a chart for better understanding of data. 
+> It's a web application where we can upload CSV( comma separated values) files to convert it into a Table and perform various operations like Searching, sorting, also we can display any column as a chart for better understanding of data. 
 
 ## Demo and Explanation
 

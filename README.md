@@ -23,14 +23,10 @@
 * Integrated a charting library [canvasJS](https://canvasjs.com/html5-javascript-column-chart/) to display a selected column as a chart.
 
 ## Usage Guide
-1. Insatll [nodejs](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/) on your system. check using following command in the terminal.
-    ```
-    $node -v
-    $mongod --version
-    ```
+1. Install [nodejs](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/) on your system.
 2. Open your terminal and run the following :
     ```
-    cd CSV-Table_converter
+    cd CSV-Table_converter-main
     npm install
     npm start
     ```

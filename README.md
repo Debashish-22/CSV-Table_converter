@@ -7,8 +7,9 @@
 
 ## Tech-Stack
 * HTML, CSS (for frontend interface)
-* Javascript (for both frontend and backend)
+* Javascript, jQuery (for both frontend and backend)
 * NodeJS and expressJS (for backend server)
+* AJAX (to receive data  from server asynchronously)
 * MongoDB (as database to store fles)
 
 ## Features

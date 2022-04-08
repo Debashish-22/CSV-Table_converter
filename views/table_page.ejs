@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/styles/table.css">
+
+<div class="table-page container pb-5">
+
+  <%- include('_searchbox') %>
+
+  <div id="chartContainer" class="chartContainer my-4" style="height: 300px; width: 100%;"></div>
+
+  <a href="/" class="shadow home position-fixed bottom-0 end-0 d-flex align-items-center justify-content-center pointer shadow" title="Home">
+    <h4><i class="bi bi-house-fill"></i></h4>
+  </a>
+  
+  <a class="top shadow position-fixed bottom-0 end-0 d-flex align-items-center justify-content-center pointer shadow" title="Back to top">
+    <h4><i class="bi bi-arrow-up"></i></h4>
+  </a>
+
+  <div id="<%= id %>" class="table-responsive mb-3">
+    <%- include('_table', {data}) %>
+  </div>
+
+  <% if (data.length > 100) { %>
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center flex-wrap">
+      <li class="page-item pointer ">
+        <h6 class="previous page-link">Previous</h6>
+      </li>
+      <% for( let i = 1; i <= Math.ceil(data.length/100); i++ ) { %>
+      <li class="numbered-page page-item pointer " page="<%= i %>">
+        <h6 class="page-link "><%= i %> </h6>
+      </li>
+      <% } %>
+      <li class="page-item pointer">
+        <h6 class="next page-link">Next</h6>
+      </li>
+    </ul>
+  </nav>
+  <% } else {%>
+
+  <nav aria-label="Page navigation ">
+    <ul class="pagination justify-content-center">
+      <li class="page-item pointer disabled">
+        <h6 class="previous page-link">Previous</h6>
+      </li>
+
+      <li class="page-item pointer disabled">
+        <h6 class="next page-link">Next</h6>
+      </li>
+    </ul>
+  </nav>
+  <% } %>
+</div>
+
+<!-- script of charting library 'canvasJS' -->
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="/scripts/table.js"></script>

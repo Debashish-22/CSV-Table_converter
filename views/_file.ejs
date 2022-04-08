@@ -1,0 +1,16 @@
+<div class="file my-2 d-flex justify-content-between align-items-center p-2 bg-light">
+    <h5 class="text-dark"><%= file.fileTime %></h5>
+   
+    <div class="file-functions d-flex align-items-center">
+        <a href="/table/generate/<%= file.id %>" class="btn non-link bg-orange text-light rounded-pill me-3" title="convert csv to table">
+            <h6>
+                convert to table <i class="bi bi-table" ></i>
+            </h6>
+        </a>
+        <a href="file/destroy/<%= file.id %>">
+            <h5>
+                <i class="bi bi-trash text-danger pointer" title="delete file"></i>
+            </h5>
+        </a>
+    </div>
+</div>

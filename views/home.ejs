@@ -1,0 +1,28 @@
+<div class="home-page container d p-4">
+    <div class="row mb-3">
+        <div class="col-md-6 mb-5 mx-auto p-2 shadow">
+            <form class="d-flex" enctype="multipart/form-data" action="/file/upload" method="post">
+                <input name="csvFile" class="form-control me-2 d" type="file" required>
+                <button type="submit" class="btn  bg-orange text-light fw-600">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <h3 class="fw-700 text-light">My Upload's!</h3>
+    <div class="uploaded-files px-2 mt-3 shadow-lg">
+        <% if (files.length === 0) { %>
+            <div class="upload-img d-flex flex-column justify-content-center align-items-center ">
+                <img src="/icons/folder.png" alt="">
+                <div class="text-capitalize warning fst-italic text-danger mt-2">
+                    * Please upload file with ".CSV" extension. <br>
+                    * make sure your first row is column name.
+                </div>
+            </div>
+        <% } %>
+        
+        <% for( file of files) { %>
+            <%- include('_file', {file})  %> 
+        <% } %>
+    </div>
+
+</div>

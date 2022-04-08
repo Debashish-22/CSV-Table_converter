@@ -1,0 +1,53 @@
+body{
+    background-color: #f7b42c;
+    scroll-behavior: smooth;
+}
+.wrapper{
+    position: relative;
+}
+.wrapper .bi-search {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #9ca3af;
+}
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+.form-input:focus {
+    box-shadow: none;
+    border: none;
+}
+.form-input:not(:focus) {
+    border: none;
+}
+.table{
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid rgba(247, 180, 44, 0.4);
+}
+thead tr{
+    background-color: rgba(255, 221, 0, 0.3);
+}
+.chartContainer{
+    display: none;
+}
+.home, .top{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: rgba(0, 0, 0, 0.75);
+}
+.home{
+    transform: translate(-7px, -20px);
+}
+.top{
+    transform: translate(-7px, -80px);
+}
+.home:hover, .top:hover{
+    transition: 2s;
+    color: rgba(0,0,0,1);
+}

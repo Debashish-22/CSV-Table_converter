@@ -45,3 +45,4 @@
 * routes - This folder contains all the routes for our API.
 * uploads - This folder will stor the uploaded files.
 * views - This folder contains layout, partials and templates to be displayed to the user.
+* Samples - This folder conatins some csv files of different size to test application.
